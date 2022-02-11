@@ -3,7 +3,7 @@ import { InjectionKey } from 'vue'
 import {
   createStore,
   Store as VuexStore,
-  useStore as vuexUseStore,
+  useStore as vuexUseStore
 } from 'vuex'
 
 // import example from './module-example'
@@ -46,9 +46,9 @@ export default store(function (/* { ssrContext } */) {
     strict: !!process.env.DEBUGGING
   })
 
-  return Store;
+  return Store
 })
 
-export function useStore() {
+export function useStore () {
   return vuexUseStore(storeKey)
 }
